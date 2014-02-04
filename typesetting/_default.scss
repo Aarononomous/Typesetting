@@ -1,18 +1,3 @@
-/*
-
-References:
-
-http://typeplate.com
-http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
-http://www.microsoft.com/typography/otspec/featurelist.htm
-http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/
-http://www.w3.org/TR/2013/WD-css-text-3-20131010/
-http://www.w3.org/TR/2002/WD-css3-linebox-20020515/
-
-*/
-
-// Includes
-
 @import "typesetting/utilities";
 @import "typesetting/hyphenate";
 @import "typesetting/tab-size";
@@ -21,9 +6,8 @@ http://www.w3.org/TR/2002/WD-css3-linebox-20020515/
 @import "typesetting/font-size-adjust";
 @import "typesetting/font-feature-settings";
 
-//
-
 body {
+	// Font-smoothing
 	text-rendering: optimizelegibility;
 
 	// hyphenate the entire page by default; we remove this later for specific elements

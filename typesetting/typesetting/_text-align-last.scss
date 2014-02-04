@@ -1,7 +1,0 @@
-@mixin text-align-last($last-line:start) {
-	// options: auto | start | end | left | right | center | justify
-	// default: auto
-
-	// rtl justified text won't be on the wrong side
-	@include prefix(text-align-last, #{$last-line});
-}

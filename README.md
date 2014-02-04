@@ -52,10 +52,21 @@ There are a few ways to use this in your project.
 	```SCSS
 	@import "typesetting/hyphenate", "typesetting/font-feature-settings";
 	```
+
 3. Import *all* of the mixins *without* the default styling:
+	
 	```SCSS
 	@import "typesetting";
 	```
+
+### References
+
+http://typeplate.com
+http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+http://www.microsoft.com/typography/otspec/featurelist.htm
+http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/
+http://www.w3.org/TR/2013/WD-css-text-3-20131010/
+http://www.w3.org/TR/2002/WD-css3-linebox-20020515/
 
 ## License
 

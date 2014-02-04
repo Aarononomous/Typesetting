@@ -1,6 +1,0 @@
-@mixin tab-size($characters:4) {
-	// options: <integer>
-	// default: 8
-
-	@include prefix(tab-size, #{$characters});
-}
