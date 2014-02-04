@@ -1,0 +1,5 @@
+@mixin font-size-adjust($adjustment) {
+	// options: none | <number>
+
+	@include prefix(font-size-adjust, #{$adjustment});
+}
