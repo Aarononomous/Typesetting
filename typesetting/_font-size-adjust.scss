@@ -1,5 +1,7 @@
 @mixin font-size-adjust($adjustment) {
 	// options: none | <number>
+	// default: none
 
+	// You'll need to adjust this per-case based on your font stack.
 	@include prefix(font-size-adjust, #{$adjustment});
 }

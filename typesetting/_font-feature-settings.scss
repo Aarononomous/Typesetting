@@ -1,0 +1,24 @@
+@mixin font-feature-settings($feature-sets...) {
+	// options: normal | many, many options. See http://www.microsoft.com/typography/otspec/features_ae.htm
+	// default: normal
+
+	// N.B.: Feature sets _must_ be passed as a list
+	// 	@include font-feature-settings("liga, dliga, zero, smcp"); // WRONG!
+	// 	@include font-feature-settings("liga dliga zero smcp"); // WRONG!
+	// 	@include font-feature-settings(liga, dliga, zero, smcp); // RIGHT
+
+	$ff: ();
+	$ff15: ();
+
+	@each $feature in $feature-sets {
+		$ff: append($ff, "#{$feature}=1", comma);
+		$ff15: append($ff15, "#{$feature}" on, comma); // Firefox 15
+	}
+	-moz-font-feature-settings: $ff;
+	-moz-font-feature-settings: $ff15;
+	-webkit-font-feature-settings: $feature-sets;
+	-ms-font-feature-settings: $feature-sets;
+	-o-font-feature-settings: $feature-sets;
+	font-feature-settings: $feature-sets;
+
+}
