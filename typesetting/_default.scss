@@ -11,7 +11,7 @@ body {
 	text-rendering: optimizelegibility;
 
 	// hyphenate the entire page by default; we remove this later for specific elements
-	// the lang attribute must be set, e.g., <html lang="en">
+	// the lang attribute must be set on a containing element, e.g., <html lang="en">
 	@include hyphenate; 
 
 	// Set reasonable tab size

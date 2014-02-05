@@ -1,0 +1,62 @@
+body {
+  text-rendering: optimizelegibility;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphenate: auto;
+  -moz-hyphenate: auto;
+  -o-hyphenate: auto;
+  -ms-hyphenate: auto;
+  hyphenate: auto;
+  -ms-hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-chars: 6 3 3;
+  -ms-hyphenate-limit-zone: 3ex;
+  hyphenate-limit-zone: 3ex;
+  -webkit-hyphenate-before: 3;
+  -webkit-hyphenate-after: 3;
+  -webkit-hyphenate-lines: 2;
+  -ms-hyphenate-lines: 2;
+  hyphenate-lines: 2;
+  hyphenate-limit-last: always;
+  -webkit-tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  -ms-tab-size: 4;
+  tab-size: 4;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga" on;
+  -webkit-font-feature-settings: liga;
+  -ms-font-feature-settings: liga;
+  -o-font-feature-settings: liga;
+  font-feature-settings: liga;
+  -webkit-text-align-last: start;
+  -moz-text-align-last: start;
+  -o-text-align-last: start;
+  -ms-text-align-last: start;
+  text-align-last: start; }
+
+h1, h2, h3, h4, h5, h6 {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphenate: none;
+  -moz-hyphenate: none;
+  -o-hyphenate: none;
+  -ms-hyphenate: none;
+  hyphenate: none;
+  -moz-font-feature-settings: "liga=1", "dliga=1";
+  -moz-font-feature-settings: "liga" on, "dliga" on;
+  -webkit-font-feature-settings: liga, dliga;
+  -ms-font-feature-settings: liga, dliga;
+  -o-font-feature-settings: liga, dliga;
+  font-feature-settings: liga, dliga; }
+
+abbr, acronym, code, del, dir, kbd, keygen, listing, plaintext, samp, sub, sup, tt, var, xmp {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphenate: none;
+  -moz-hyphenate: none;
+  -o-hyphenate: none;
+  -ms-hyphenate: none;
+  hyphenate: none; }

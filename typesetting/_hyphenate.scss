@@ -1,4 +1,4 @@
-@mixin hyphenate($hyphenation:"auto") {
+@mixin hyphenate($hyphenation:"auto", $min-word-length:6, $min-before:3, $min-after:3, $max-lines:2) {
 	// options: manual | none | auto
 	// default: manual
 
@@ -8,15 +8,20 @@
 
 	@include prefix(hyphenate, #{$hyphenation});
 
-	-ms-hyphenate-limit-chars: 6 5 3;
-	hyphenate-limit-chars: 6 5 3;
+	@if $hyphenation != none {
+		// 6 char word limit, 5 char before, 3 char after
+		-ms-hyphenate-limit-chars: $min-word-length $min-before $min-after;
+		hyphenate-limit-chars:  $min-word-length $min-before $min-after;
 
-	-ms-hyphenate-limit-zone: 3em;
-	hyphenate-limit-zone: 3em;
+		-ms-hyphenate-limit-zone: #{$min-before}ex;
+		hyphenate-limit-zone: #{$min-before}ex;
 
-	-webkit-hyphenate-before: 5;
-	-webkit-hyphenate-after: 3;
-	hyphenate-lines: 2;
-
-	hyphenate-limit-last: always;
+		-webkit-hyphenate-before: $min-before;
+		-webkit-hyphenate-after: $min-after;
+		
+		-webkit-hyphenate-lines: $max-lines;
+		-ms-hyphenate-lines: $max-lines;
+		hyphenate-lines: $max-lines;
+		hyphenate-limit-last: always;
+	}
 }
