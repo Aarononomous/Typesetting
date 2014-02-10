@@ -1,0 +1,4 @@
+@mixin optimize-legibility {
+	text-rendering: optimizeLegibility;
+	@include font-feature-settings(kern)
+}

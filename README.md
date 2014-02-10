@@ -67,6 +67,7 @@ There are a few ways to use this in your project.
 - http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/
 - http://www.w3.org/TR/2013/WD-css-text-3-20131010/
 - http://www.w3.org/TR/2002/WD-css3-linebox-20020515/
+- http://blog.typekit.com/2014/02/05/kerning-on-the-web/
 
 ## License
 

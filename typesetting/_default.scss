@@ -1,14 +1,15 @@
 @import "typesetting/utilities";
+@import "typesetting/font-feature-settings";
+@import "typesetting/optimize-legibility";
 @import "typesetting/hyphenate";
 @import "typesetting/tab-size";
 @import "typesetting/text-align-last";
 @import "typesetting/force-wrap";
 @import "typesetting/font-size-adjust";
-@import "typesetting/font-feature-settings";
 
 body {
 	// Font-smoothing
-	text-rendering: optimizelegibility;
+	@include optimize-legibility;
 
 	// hyphenate the entire page by default; we remove this later for specific elements
 	// the lang attribute must be set on a containing element, e.g., <html lang="en">
