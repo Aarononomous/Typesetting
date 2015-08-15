@@ -1,4 +1,6 @@
-# Typesetting, a Sass Mixin
+# Typesetting
+
+A Sass mixin
 
 ## About
 
@@ -6,19 +8,19 @@
 
 ### What **Typesetting** Is For
 
-**Typesetting** makes it easy to adjust the smallest details of the lettering of your project. It's composed of a series of mixins which make hyphenation, Opentype set adjustment, and other advanced typography features easy to add to your project. For quickly adding professional-looking typesetting, simply include `default.css` to your HTML or CSS or `_default.scss` to your Sass.
+**Typesetting** makes it easy to adjust the smallest details of the lettering of your project. It&rsquo;s composed of a series of mixins which make hyphenation, Opentype set adjustment, and other advanced typography features easy to add to your project. For quickly adding professional-looking typesetting, simply link `default.css` within your HTML or include it within your CSS, or add `_default.scss` to your Sass directory.
 
-### What **Typesetting** Is Not For
+### What **Typesetting** *Isn&rsquo;t* For
 
 **Typesetting** is designed to complement, not supercede, your typographic stylings. It has *no* opinions on leading (line-height), font stacks, or the proportions of your headers. It does not color your links or set your margins. Adding **Typesetting** to your project will not modify any of this.
 
-**Typesetting** is also not useful for microtypography --- it cannot hang punctuation or tweak your kerning, for example --- these aren't currently possible using only CSS.
+**Typesetting** is also not useful for microtypography &mdash; it cannot hang punctuation or tweak your kerning, for example &mdash; these aren&rsquo;t currently possible using only CSS.
 
 ## Usage
 
 ### CSS
 
-To style your page with the default **Typesetting** rules, download the `typesetting.css` file and link to it in the head of your HTML document. 
+To style your page with the default **Typesetting** rules, download the `typesetting.css` file and link to it in the head of your HTML document.
 
 ```HTML
 <head>
@@ -54,14 +56,18 @@ There are a few ways to use this in your project.
 	```
 
 3. Import *all* of the mixins *without* the default styling:
-	
+
 	```SCSS
 	@import "typesetting";
 	```
 
-### References
+### Forking
 
-- http://typeplate.com  
+Fork to your Sass directory. Easy!
+
+## References
+
+- http://typeplate.com
 - http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
 - http://www.microsoft.com/typography/otspec/featurelist.htm
 - http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/
